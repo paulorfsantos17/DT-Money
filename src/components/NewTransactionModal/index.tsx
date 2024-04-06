@@ -1,4 +1,6 @@
 import * as Dialog from '@radix-ui/react-dialog'
+import { ArrowCircleDown, ArrowCircleUp, X } from 'phosphor-react'
+
 import {
   CloseButton,
   Content,
@@ -6,7 +8,6 @@ import {
   TransactionType,
   TransactionTypeButton,
 } from './styles'
-import { ArrowCircleDown, ArrowCircleUp, X } from 'phosphor-react'
 
 export function NewTransactionModal() {
   return (

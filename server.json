@@ -1,0 +1,28 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Desenvolvimento de software",
+      "type": "income",
+      "category": "Venda",
+      "price": 14000,
+      "createAt": "2024-04-05T23:34:47.264Z"
+    },
+    {
+      "id": 2,
+      "description": "Almoço",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 60,
+      "createAt": "2024-04-05T23:30:47.264Z"
+    },
+    {
+      "id": 3,
+      "description": "Ignite Rockseat",
+      "type": "outcome",
+      "category": "Educação",
+      "price": 1980,
+      "createAt": "2024-04-05T23:10:47.264Z"
+    }
+  ]
+}
