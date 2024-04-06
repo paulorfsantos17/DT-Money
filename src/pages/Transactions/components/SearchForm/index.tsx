@@ -12,7 +12,11 @@ const searchFormSchema = z.object({
 type ISearchFormInput = z.infer<typeof searchFormSchema>
 
 export function SearchForm() {
-  const { register, handleSubmit } = useForm<ISearchFormInput>({
+  const {
+    register,
+    handleSubmit,
+    formState: { isSubmitting },
+  } = useForm<ISearchFormInput>({
     resolver: zodResolver(searchFormSchema),
   })
 
@@ -29,7 +33,7 @@ export function SearchForm() {
         placeholder="Busque por transações"
         {...register('query')}
       />
-      <button type="submit">
+      <button type="submit" disabled={isSubmitting}>
         <MagnifyingGlass size={20} />
         Buscar
       </button>
